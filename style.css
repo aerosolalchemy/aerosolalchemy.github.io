@@ -252,6 +252,10 @@ hr.socket {
          display: block;
          margin: 0 auto;
 }
+.img-fluid {
+        width: 360px;
+        height: 200px;
+}
 }
 
 
