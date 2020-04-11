@@ -2,189 +2,84 @@
 /* ^^Font import generated from google fonts^^ */
 
 body { /*This will set the page's overall font parameters*/
-     overflow-x: hidden; /* All contents stay within browser window, no overflow */
-     font-family: "Lato", sans-serif; /*This is pasted from google fonts*/
-     color: #505962;
+  overflow-x: hidden; /* All contents stay within browser window, no overflow */
+  font-family: "Lato", sans-serif; /*This is pasted from google fonts*/
+  color: #505962;
 }
 .offset:before { /*accounts for the space used by navigation*/
-               display: block;
-               content: "";
-               height: 7.5rem;
-               margin-top: -7.5rem; /*Without this there is too much space between sections*/
+  display: block;
+  content: "";
+  height: 7.5rem;
+  margin-top: -7.5rem; /*Without this there is too much space between sections*/
 } 
 
 /*--- Navigation ---*/
 .navbar {
-        text-transform: uppercase; /*All our links in uppercase letters*/
-        font-weight: 700; /*Makes the font bold*/
-        font-size: 1rem;
-        letter-spacing: .1rem;
-        background: rgba(0, 0, 0, 0.6)!important;
-        /*We use rgba because we want a transparent background. 0, 0, 0 will make it black, and the 0.6 sets a 40% transparency*/
-        /*We add !important for the background color to take effect, it will override the bg-dark class*/
+  text-transform: uppercase; /*All our links in uppercase letters*/
+  font-weight: 700; /*Makes the font bold*/
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+  /*We use rgba because we want a transparent background. 0, 0, 0 will make it black, and the 0.6 sets a 40% transparency*/
+  /*We add !important for the background color to take effect, it will override the bg-dark class*/
 }
 .navbar-brand img { /*Resize the logo*/
-              height: 6rem;              
+  height: 6rem;              
 }
 .navbar-nav li {
-             padding-right: .7rem; /*additional spacing to nav links*/
+  padding-right: .7rem; /*additional spacing to nav links*/
 } 
 .navbar-dark .navbar-nav .nav-link { /*Sets color of nav links no hover*/
-             color: white;
-             padding-top: .8rem;
+  color: white;
+  padding-top: .8rem;
 }
 .navbar-dark .navbar-nav .nav-link.active, /*Sets color of links with hover and the link we're currently in*/
 .navbar-dark .navbar-nav .nav-link:hover {
-              color: #AD99FE;
+  color: #AD99FE;
 }
  
  /*--- Landing Page ---*/
 .home-inner { 
-             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/purplefalls_wm2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/purplefalls_wm2.jpg);
 }
 .caption { /*Keeps our headings inside of the window when the window sizes down*/
-          width: 100%;
-          max-width: 100%;
-          position: absolute; /*Places the headings on top of the landing page instead of under it*/
-          top: 38%; /*Places the headings 38% down the page, adjust depending on content*/
-          z-index: 1; /*Ensures that the text will always display on top of the background image*/
-          color: white;
-          text-transform: uppercase;
+  width: 100%;
+  max-width: 100%;
+  position: absolute; /*Places the headings on top of the landing page instead of under it*/
+  top: 38%; /*Places the headings 38% down the page, adjust depending on content*/
+  z-index: 1; /*Ensures that the text will always display on top of the background image*/
+  color: white;
+  text-transform: uppercase;
 }
 .caption h1 { /*text style for h1*/
-         font-size: 3.8rem;
-         font-weight: 700; /*bold*/
-         letter-spacing: .3rem;
-         text-shadow: .1rem .1rem .8rem black; /*Shadow to make the letters pop out. Horizonal, vertical, blur radius, color*/
-         padding-bottom: 1rem; /*put some spacing between h1 and h3*/
+  font-size: 3.8rem;
+  font-weight: 700; /*bold*/
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black; /*Shadow to make the letters pop out. Horizonal, vertical, blur radius, color*/
+  padding-bottom: 1rem; /*put some spacing between h1 and h3*/
 }
 .caption h3 { 
-         font-size: 2rem;
-         text-shadow: .1rem .1rem .5rem black;
-         padding-bottom: 1.6rem;
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
 }
 .btn-lg { 
-        border-width: medium; /*makes button edges wider*/
-        border-radius: 0; /*gets rid of rounder edges*/
-        padding: .6rem 1.3rem; /*spacing between text and border. Vertical, horizontal*/
-        font-size: 1.1rem; /*increase font size*/
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
+  border-width: medium; /*makes button edges wider*/
+  border-radius: 0; /*gets rid of rounder edges*/
+  padding: .6rem 1.3rem; /*spacing between text and border. Vertical, horizontal*/
+  font-size: 1.1rem; /*increase font size*/
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
-
-/*--- Some style codes from bootstap tutorial to choose from as needed ---*/
 .narrow { /*Narrow down a column*/
-        width: 75%;
-        margin: 1.5rem auto; /*1.5 left and right, auto ensures it is centered.*/
-        padding-top: 2rem;
+  width: 75%;
+  margin: 1.5rem auto; /*1.5 left and right, auto ensures it is centered.*/
+  padding-top: 2rem;
 }
-.narrow h1 { 
-        font-size: 2.4rem;
-}
-.btn-secondary { 
-        border-width: medium;
-        border-radius: 0;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        padding: .6rem 1.2rem;
-        margin: 1rem;
-        color: white;
-        background-color: #1ebba3;
-        border-color: #1ebba3;
-}
-.btn-secondary:hover { 
-        background-color: #189582;
-        border-color: #189582;
-}
-
-
-/*--- More style codes ---*/
-.jumbotron {
-           margin-bottom: 0;
-           padding: 2rem 0 3.5rem; /*order is top, left-right, bottom*/
-           border-radius: 0;
-           background-color: black /*#11082A;*/
-           /*background-image:url(img/stars.gif);
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-position: center;
-           background-size: cover;*/
-}
-
-.spray { 
-           margin-bottom: 0;
-           padding: 2rem 0 3.5rem;
-           /*background-color: black;*/ 
-           background-image: url(img/stars.gif);
-           background-repeat: no-repeat;
-           background-position: center;
-           background-size: cover;
-           background-attachment: fixed;
-}
-h3.heading {
-           font-size: 1.9rem;
-           font-weight: 700;
-           text-transform: uppercase;
-           margin-bottom: 1.9rem;
-           color: white;
-}
-.heading-underline {
-                   width: 3rem;
-                   height: .2rem;
-                   background-color: #AD99FE;
-                   margin: 0 auto 1rem; /*0 auto for center, 2rem for space on the bottom*/
-
-}
-
-.pointhov {
-          cursor: pointer; /*for some reason the cursor wasn't changing when hovering over carousel images*/
-}
-
-.newest p {
-                     text-transform: uppercase;
-                     font-weight: 700;
-                     font-size: 1.1rem;
-                     color: white;
-                     letter-spacing: .1rem
-}
-
-.link-text {
-           text-transform: uppercase;
-           font-weight: 700;
-           letter-spacing: .1rem;
-}
-
-.feature svg.svg-inline--fa { 
-         color: #1ebba3;
-}
-.feature h3 {
-         font-size: 1.3rem;
-         text-transform: uppercase;
-         padding-bottom: .4rem;
-}
-.feature p {
-         font-size: 1.1rem;
-}
-
-/*--- More style codes ---*/
 .fixed { 
        background-image: url(img/purplefalls.jpg);
        z-index: -1;
-}
-.pyro { 
-           margin-bottom: 0;
-           padding: 2rem 0 3.5rem;
-           background-color: blue; 
-           /*border-radius: 0;
-           background-image:url(img/stars.gif);
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-position: center;
-           background-size: cover;*/
-}
-.padpyro{
-      padding: 7rem 2rem;
 }
 .dark { 
       background-color: rgba(0, 0, 0, 0.75);
@@ -198,193 +93,200 @@ h3.heading {
                   margin-top: 1.5rem;
 }
 
-/*--- More style codes---*/
 
-.img-fluid {
-           width: 460px;
-           height: 300px;
+/*----------------- Spraypaint Art Section -------------*/
+.spray { 
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  background-image: url(img/stars.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+  color: white;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #AD99FE;
+  margin: 0 auto 1rem; /*0 auto for center, 2rem for space on the bottom*/
 
-.modal-header {
-              border-bottom: 2px solid white;
 }
-
-.modal-footer {
-              border-top: 2px solid white;
+.pointhov {
+  cursor: pointer; /*for some reason the cursor wasn't changing when hovering over carousel images*/
 }
-
-.modal-body img {
-        width: 670px;
-        height: 520px;
+.newest p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: .1rem
 }
-
-.modal-title {
-             color: white;
-             text-transform: uppercase;
-             font-weight: 700;
-             font-size: 1.5rem;
-             letter-spacing: .1rem;
-             
-}
-
-.modfoot  {
-                 color: white;
-                 text-transform: uppercase;
-                 font-size: 1rem;
-                 letter-spacing: .1rem;
-                 font-weight: 700;
-}
-
-.border  {
-        border-width: 2px!important;
-        
-}
-
-.btn-md {
-        border-width: medium;
-        border-radius: 0;
-}
-
-
-/*--- Contact Section ---*/
-footer { 
-       background-color: #11082A;
-       color: white;
-       padding: 2rem 0 2rem;
-       /*margin-top: 1rem;*/
-}
-footer img {
-       height: 6rem;
-       margin: 0.6rem 0;
-}
-footer a { 
-       color: white;
-}
-footer svg.svg-inline--fa { 
-       font-size: 1.6rem;
-       margin: 1.2rem .5rem 0 0;
-}
-footer svg.svg-inline--fa:hover { 
-       color: #AD99FE!important;
-}
-hr.socket { 
-          width: 100%;
-          border-top: .2rem solid #666b71;
-          margin-top: 3rem;
-}
-
-/*--- Media Queries ---*/
-/*These are specific changes that will be made to classes when shrinking down to mobile size*/
-@media (max-width: 767px) { /*One less pixel than the md breakpoint*/
-.caption h1 {
-         font-size: 2.3rem;
-         letter-spacing: .15rem;
-         padding-bottom: .5rem;
-}
-.caption h3 { 
-         font-size: 1.2rem;
-         padding-bottom: 1.2rem;
-}
-.btn-lg { 
-        padding: .5rem 1rem;
-        font-size: 1rem;
-}
-.narrow h1 { 
-        font-size: 1.5rem;
-}
-.clients img { 
-         max-width: 50%;
-         display: block;
-         margin: 0 auto;
+.link-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
 }
 .img-fluid {
-        width: 360px;
-        height: 200px;
+  width: 460px;
+  height: 300px;
 }
 
-.portrait{
-          width: 280px;
-          height: 300px;
-}
-.modal-body img {
-        width: 440px;
-        height: 360px;
-}
-.modal-title {
-             color: white;
-             text-transform: uppercase;
-             font-weight: 700;
-             font-size: 1.1rem;
-             letter-spacing: .1rem;
-             
-}
+/*--------------- Carousel stuff -------------*/
 
-.price {
-            padding-bottom: 1.6rem;
-}
-
-}
-
-@media (max-width: 567px){
-        .modal-body img {
-        width: 315px;
-        height: 240px;
-}
-        .modal-title {
-             color: white;
-             text-transform: uppercase;
-             font-weight: 700;
-             font-size: .8rem;
-             letter-spacing: .1rem;        
-}
-        .price {
-            padding-bottom: 1.2rem;
-}
-        .modfoot  {
-                 color: white;
-                 text-transform: uppercase;
-                 font-size: .8rem;
-                 letter-spacing: .1rem;
-                 font-weight: 700;
-}
-}
-
-
-/*--- Carousel stuff ---*/
-/*.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-.carousel-indicators {
-    bottom: -50px;
-}*/
 .carousel-item {
   padding-left: .5rem;
   padding-right: .5rem;
-
 }
 .carousel-caption h3 {
-                     text-transform: uppercase;
-                     text-shadow: .1rem .1rem .8rem black;
-                     font-weight: 700;
-                     letter-spacing: .3rem;
-                     z-index: 1;
-
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem .8rem black;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  z-index: 1;
 }
 .carousel-caption h2 {
-                     text-transform: uppercase;
-                     text-shadow: .1rem .1rem .8rem black;
-                     font-weight: 700;
-                     letter-spacing: .3rem;
-                     z-index: 1;
-
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem .8rem black;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  z-index: 1;
 }
 .carousel-caption p {
-                    color: red;
-                    text-transform: uppercase;
-                    text-shadow: .1rem .1rem .8rem black;
-                    font-weight: 700;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem .8rem black;
+  font-weight: 700;
+}
+
+/*------------------- Modal ---------------------*/
+.modal-header {
+  border-bottom: 2px solid white;
+}
+.modal-footer {
+  border-top: 2px solid white;
+}
+.modal-body img {
+  width: 670px;
+  height: 520px;
+}
+.modal-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;        
+}
+.modfoot  {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
+.border  {
+  border-width: 2px!important;      
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+}
+
+/*-------------- Contact Section ------------*/
+footer { 
+  background-color: #11082A;
+  color: white;
+  padding: 2rem 0 2rem;
+}
+footer img {
+  height: 6rem;
+  margin: 0.6rem 0;
+}
+footer a { 
+  color: white;
+}
+footer svg.svg-inline--fa { 
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover { 
+  color: #AD99FE!important;
+}
+hr.socket { 
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+/*-------------------------------------- Media Queries -------------------------------------*/
+/*These are specific changes that will be made to classes when shrinking down to mobile size*/
+@media (max-width: 767px) { /*One less pixel than the md breakpoint*/
+.caption h1 {
+  font-size: 2.3rem;
+  letter-spacing: .15rem;
+  padding-bottom: .5rem;
+}
+.caption h3 { 
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.btn-lg { 
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+.img-fluid {
+  width: 360px;
+  height: 200px;
+}
+.portrait{
+  width: 280px;
+  height: 300px;
+}
+.modal-body img {
+  width: 440px;
+  height: 360px;
+}
+.modal-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+}
+.price {
+  padding-bottom: 1.6rem;
+}
+}
+
+/*------------ Extra small -----------*/
+@media (max-width: 567px){
+.modal-body img {
+  width: 315px;
+  height: 240px;
+}
+.modal-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .1rem;        
+}
+.price {
+  padding-bottom: 1.2rem;
+}
+.modfoot  {
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  font-weight: 700;
+}
 }
 
 /*********************************************************************/
@@ -392,71 +294,60 @@ hr.socket {
 /*********************************************************************/
 /* medium - display 2  */
 @media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(50%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-50%);
-    }
-    .modal-body img {
-        width: 440px;
-        height: 360px;
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(50%);
 }
-    .price {
-            padding-bottom: 2.25rem;
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-50%);
+}
+.modal-body img {
+  width: 440px;
+  height: 360px;
+}
+.price {
+  padding-bottom: 2.25rem;
 }
 }
 
 /* large - display 3 */
 @media (min-width: 992px) {
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33%);
-    }
-
-    .modal-body img {
-        width: 670px;
-        height: 520px;
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
 }
-    
-    .price {
-            padding-bottom: 0;
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+}
+.modal-body img {
+  width: 670px;
+  height: 520px;
+}
+.price {
+  padding-bottom: 0;
 }
 }
 
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
-    }
-
-    .carousel-inner .carousel-item>div:first-child {
-        display: block;
-    }
+.carousel-inner .carousel-item>div {
+  display: none;
+}
+.carousel-inner .carousel-item>div:first-child {
+  display: block;
+}
 }
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
-    display: flex;
+  display: flex;
 }
-
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left {
-    transform: translateX(0);
+  transform: translateX(0);
 }
-
-
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
