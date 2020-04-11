@@ -137,6 +137,10 @@ h3.heading {
 
 }
 
+.pointhov {
+          cursor: pointer; /*for some reason the cursor wasn't changing when hovering over carousel images*/
+}
+
 .newest p {
                      text-transform: uppercase;
                      font-weight: 700;
@@ -201,6 +205,47 @@ h3.heading {
            height: 300px;
 }
 
+.modal-header {
+              border-bottom: 2px solid white;
+}
+
+.modal-footer {
+              border-top: 2px solid white;
+}
+
+.modal-body img {
+        width: 670px;
+        height: 520px;
+}
+
+.modal-title {
+             color: white;
+             text-transform: uppercase;
+             font-weight: 700;
+             font-size: 1.5rem;
+             letter-spacing: .1rem;
+             
+}
+
+.modfoot  {
+                 color: white;
+                 text-transform: uppercase;
+                 font-size: 1rem;
+                 letter-spacing: .1rem;
+                 font-weight: 700;
+}
+
+.border  {
+        border-width: 2px!important;
+        
+}
+
+.btn-md {
+        border-width: medium;
+        border-radius: 0;
+}
+
+
 /*--- Contact Section ---*/
 footer { 
        background-color: #11082A;
@@ -256,6 +301,52 @@ hr.socket {
         width: 360px;
         height: 200px;
 }
+
+.portrait{
+          width: 280px;
+          height: 300px;
+}
+.modal-body img {
+        width: 440px;
+        height: 360px;
+}
+.modal-title {
+             color: white;
+             text-transform: uppercase;
+             font-weight: 700;
+             font-size: 1.1rem;
+             letter-spacing: .1rem;
+             
+}
+
+.price {
+            padding-bottom: 1.6rem;
+}
+
+}
+
+@media (max-width: 567px){
+        .modal-body img {
+        width: 270px;
+        height: 240px;
+}
+        .modal-title {
+             color: white;
+             text-transform: uppercase;
+             font-weight: 700;
+             font-size: .8rem;
+             letter-spacing: .1rem;        
+}
+        .price {
+            padding-bottom: 1.2rem;
+}
+        .modfoot  {
+                 color: white;
+                 text-transform: uppercase;
+                 font-size: .8rem;
+                 letter-spacing: .1rem;
+                 font-weight: 700;
+}
 }
 
 
@@ -274,6 +365,14 @@ hr.socket {
 
 }
 .carousel-caption h3 {
+                     text-transform: uppercase;
+                     text-shadow: .1rem .1rem .8rem black;
+                     font-weight: 700;
+                     letter-spacing: .3rem;
+                     z-index: 1;
+
+}
+.carousel-caption h2 {
                      text-transform: uppercase;
                      text-shadow: .1rem .1rem .8rem black;
                      font-weight: 700;
@@ -303,6 +402,13 @@ hr.socket {
     .carousel-inner .carousel-item-prev {
         transform: translateX(-50%);
     }
+    .modal-body img {
+        width: 440px;
+        height: 360px;
+}
+    .price {
+            padding-bottom: 2.25rem;
+}
 }
 
 /* large - display 3 */
@@ -317,6 +423,15 @@ hr.socket {
     .carousel-inner .carousel-item-prev {
         transform: translateX(-33%);
     }
+
+    .modal-body img {
+        width: 670px;
+        height: 520px;
+}
+    
+    .price {
+            padding-bottom: 0;
+}
 }
 
 @media (max-width: 768px) {
@@ -338,6 +453,13 @@ hr.socket {
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left {
     transform: translateX(0);
+}
+
+@media (max-width: 567px){
+        .modal-body img {
+        width: 270px;
+        height: 240px;
+}
 }
 
 

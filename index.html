@@ -62,8 +62,10 @@
                 				<div class="carousel-inner w-100" role="listbox">
                     				<div class="carousel-item active">
                         				<div class="col-lg-4 col-md-6">
-                            				<img class="img-fluid" src="img/4-9-2020/img1_wm.jpg">
-                            				<div class="carousel-caption"><h3>Item #0409201</h3></div>
+                                            <a class="pointhov" data-toggle="modal" data-target="#myModal">
+                            				    <img type="button" class="img-fluid" src="img/4-9-2020/img1_wm.jpg">
+                            				    <div class="carousel-caption"><h3>Item #0409201</h3></div>
+                                            </a>
                         				</div>
                     				</div>
                     				<div class="carousel-item">
@@ -164,6 +166,38 @@
 			</div>
 		</div>
 		<!-----------------------------End Spraypaint Art Section----------------->
+        <!----------------------------- Start Modals ----------------------------------->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <div class="col-4 border">
+                            <h4 class="modal-title">Item# 0409201</h4>
+                        </div>
+                        <div class="col-4 border">
+                            <h4 class="modal-title">11x14 canvas</h4>
+                        </div>
+                        <div class="col-4 border">
+                            <h4 class="modal-title price">$75</h4>
+                        </div>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="img/4-9-2020/img1_wm.jpg">
+                    </div>
+                    <div class="modal-footer justify-content-left">
+                        <div class="col">
+                            <h1 class="modfoot">Price does not include shipping cost</h1>
+                        </div>
+                        <button class="btn btn-outline-light btn-md link-text" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!----------------------------- End Modals ------------------------------->
 		<!-------------------Start footer------------------------------------>
 		<footer>
 			<div id="contact" class="row justify-content-center"> <!-- Center row-->
