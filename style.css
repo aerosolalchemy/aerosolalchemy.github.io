@@ -327,7 +327,7 @@ hr.socket {
 
 @media (max-width: 567px){
         .modal-body img {
-        width: 320px;
+        width: 315px;
         height: 240px;
 }
         .modal-title {
@@ -455,12 +455,7 @@ hr.socket {
     transform: translateX(0);
 }
 
-@media (max-width: 567px){
-        .modal-body img {
-        width: 270px;
-        height: 240px;
-}
-}
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:
