@@ -172,8 +172,13 @@ h3.heading {
 .modal-footer {
   border-top: 2px solid white;
 }
-.modal-body img {
+/*--.modal-body--*/
+.landscape {
   width: 670px;
+  height: 520px;
+}
+.portrait {
+  width: 480px;
   height: 520px;
 }
 .modal-title {
@@ -244,12 +249,13 @@ hr.socket {
   width: 360px;
   height: 200px;
 }
-.portrait{
-  width: 280px;
-  height: 300px;
-}
-.modal-body img {
+/*.modal-body--*/
+.landscape {
   width: 440px;
+  height: 360px;
+}
+.portrait {
+  width: 250px;
   height: 360px;
 }
 .modal-title {
@@ -266,8 +272,13 @@ hr.socket {
 
 /*------------ Extra small -----------*/
 @media (max-width: 567px){
-.modal-body img {
+/*--.modal-body--*/
+.landscape {
   width: 315px;
+  height: 240px;
+}
+.portrait {
+  width: 125px;
   height: 240px;
 }
 .modal-title {
@@ -302,8 +313,13 @@ hr.socket {
 .carousel-inner .carousel-item-prev {
   transform: translateX(-50%);
 }
-.modal-body img {
+/*--.modal-body--*/
+.landscape {
   width: 440px;
+  height: 360px;
+}
+.portrait {
+  width: 250px;
   height: 360px;
 }
 .price {
@@ -321,8 +337,13 @@ hr.socket {
 .carousel-inner .carousel-item-prev {
   transform: translateX(-33%);
 }
-.modal-body img {
+/*--.modal-body--*/
+.landscape {
   width: 670px;
+  height: 520px;
+}
+.portrait {
+  width: 480px;
   height: 520px;
 }
 .price {
