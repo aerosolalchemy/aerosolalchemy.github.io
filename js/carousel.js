@@ -1,5 +1,5 @@
 $('#myCarousel').carousel({
-    interval: 3000
+    interval: 0
 })
 
 $('.carousel .carousel-item').each(function() {
