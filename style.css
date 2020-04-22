@@ -178,6 +178,10 @@ h3.heading {
   width: 670px;
   height: 520px;
 }
+.wide {
+  width: 700px;
+  height: 480px;
+}
 .portrait {
   width: 480px;
   height: 520px;
@@ -259,6 +263,10 @@ hr.socket {
   width: 250px;
   height: 360px;
 }
+.wide {
+  width: 470px;
+  height: 320px;
+}
 .modal-title {
   color: white;
   text-transform: uppercase;
@@ -281,6 +289,10 @@ hr.socket {
 .portrait {
   width: 250px;
   height: 360px;
+}
+.wide {
+  width: 345px;
+  height: 200px;
 }
 .modal-title {
   color: white;
@@ -323,6 +335,10 @@ hr.socket {
   width: 250px;
   height: 360px;
 }
+.wide {
+  width: 470px;
+  height: 320px;
+}
 .price {
   padding-bottom: 2.25rem;
 }
@@ -346,6 +362,10 @@ hr.socket {
 .portrait {
   width: 480px;
   height: 520px;
+}
+.wide {
+  width: 700px;
+  height: 480px;
 }
 .price {
   padding-bottom: 0;
